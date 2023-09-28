@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <input type="text" id="result" readonly><br>
+            <button onclick="clearResult()" class="big">C</button>
+            <button onclick="deletechar()">del</button>
+            <button onclick="insertchar('/')">/</button>
+            <br>
+            <button onclick="insertchar('7')">7</button>
+            <button onclick="insertchar('8')">8</button>
+            <button onclick="insertchar('9')">9</button>
+            <button onclick="insertchar('*')">*</button>
+            <br>
+            <button onclick="insertchar('4')">4</button>
+            <button onclick="insertchar('5')">5</button>
+            <button onclick="insertchar('6')">6</button>
+            <button onclick="insertchar('-')">-</button>
+            <br>
+            <button onclick="insertchar('1')">1</button>
+            <button onclick="insertchar('2')">2</button>
+            <button onclick="insertchar('3')">3</button>
+            <button onclick="insertchar('+')">+</button>
+            <br>
+            <button onclick="insertchar('0')">0</button>
+            <button onclick="insertchar('.')">.</button>
+            <button onclick="calculate()" class="big">=</button>
+        </div>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+
+</html>
