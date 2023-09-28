@@ -1,37 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <title style="font-family: cursive;">To-do List</title>
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+        
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="center-container">
     <div class="container">
-        <div class="todo">
-            <p>To-Do List</p>
-            <div class="list" id="list">
-                <div class="heading">
-                    <div class="row"><h3>Check</h3></div>
-                    <div class="row"><h3>Task</h3></div>
-                    <div class="row"><h3>Priority</h3></div>
-                    <div class="row"><h3>Deadline</h3></div>
-                    <div class="row"><h3>Delete</h3></div>
-                </div>
-            </div>
-            <div class="uform">
-                <form action="./index.html" onsubmit="add()">
-                    <label>Task:</label>
-                    <input type="text" class="inp" id="task" required>
-                    <label>Priority:</label>
-                    <input type="text" class="inp" id="priority" required>
-                    <label>Deadline:</label>
-                    <input type="text" class="inp" id="deadline" required>
-                    <button>Submit</button>
-                </form>
-            </div>
-        </div>
+      <div id="new-task">
+        <input type="text" placeholder="Enter The Task Here..." />
+        <button id="push">Add</button>
+      </div>
+      <div id="tasks"></div>
     </div>
-    <script src="./index.js"></script>
-</body>
+</div>
+    <script src="index.js"></script>
+  </body>
 </html>
